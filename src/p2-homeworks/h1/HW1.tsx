@@ -10,11 +10,11 @@ export type MessageDataType = {
 const messageData = {
     avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
     name: 'Some Name',
-    message: 'some text ',
+    message: 'some text hello everyone my name is Kirill efwwefwef ewf w ef ewf we fwefwefw ',
     time: '22:00',
 }
-
 function HW1() {
+
     return (
         <div>
             <hr/>

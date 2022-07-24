@@ -2,9 +2,12 @@
     --bgc: green;
 }
 .message {
-    display: flex;
-    background-color: var(--bgc);
     position: relative;
+    display: flex;
+    gap: 15px;
+    padding: 25px;
+    background-color: var(--bgc);
+
 }
 .messageContent {
     display: grid;
@@ -13,8 +16,9 @@
     "text time";
     column-gap: 10px;
     position: relative;
+    max-width: 200px;
     padding: 16px;
-    border-radius: 5px;
+    border-radius: 10px 10px 10px 0px;
     background-color: #022200;
 }
 .messageContent::after {
@@ -59,9 +63,8 @@
     z-index: 3;
     position: relative;
     bottom: 0;
-    max-width: 50px;
-    max-height: 50px;
-    margin-right: 8px;
+    width: 40px;
+    height: 40px;
     align-self: self-end;
     border-radius: 50%;
 }
