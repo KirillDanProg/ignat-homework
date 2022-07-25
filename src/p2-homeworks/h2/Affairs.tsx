@@ -1,11 +1,11 @@
-import React  from 'react'
+import React, {Dispatch, SetStateAction} from 'react'
 import Affair from './Affair'
-import {AffairType} from './HW2'
+import {AffairType, FilterType} from './HW2'
 
 type AffairsPropsType = { // need to fix any
     data: any
-    setFilter: Function
-    deleteAffairCallback: any
+    setFilter: Dispatch<SetStateAction<FilterType>>
+    deleteAffairCallback: (_id: number) => void
 }
 
 function Affairs(props: AffairsPropsType) {
@@ -17,10 +17,18 @@ function Affairs(props: AffairsPropsType) {
         />
     ))
 
-    const setAll = () => {props.setFilter("all")} // need to fix
-    const setHigh = () => { props.setFilter("high")}
-    const setMiddle = () => { props.setFilter("middle")}
-    const setLow = () => { props.setFilter("low")}
+    const setAll = () => {
+        props.setFilter("all")
+    } // need to fix
+    const setHigh = () => {
+        props.setFilter("high")
+    }
+    const setMiddle = () => {
+        props.setFilter("middle")
+    }
+    const setLow = () => {
+        props.setFilter("low")
+    }
 
     return (
         <div>
