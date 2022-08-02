@@ -1,12 +1,13 @@
 import React from 'react'
 import s from './Greeting.module.css'
 
+
 type GreetingPropsType = {
-    name: any // need to fix any
-    setNameCallback: any // need to fix any
-    addUser: any // need to fix any
-    error: any // need to fix any
-    totalUsers: any // need to fix any
+    name: string // need to fix any
+    setNameCallback: (e: React.ChangeEvent<HTMLInputElement>) => void // need to fix any
+    addUser: () => void // need to fix any
+    error: string // need to fix any
+    totalUsers: number // need to fix any
 }
 
 // презентационная компонента (для верстальщика)

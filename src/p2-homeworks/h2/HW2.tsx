@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
+import styles from "./Affairs.module.css"
 
 // types
 export type AffairPriorityType = 'high' | 'middle' | 'low' // need to fix any
@@ -46,7 +47,7 @@ function HW2() {
         setAffairs(deleteAffair(affairs, _id))
     } // need to fix any
     return (
-        <div>
+        <div className={styles.hm2}>
             <hr/>
             homeworks 2
 

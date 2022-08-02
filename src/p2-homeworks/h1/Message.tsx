@@ -1,8 +1,8 @@
 import React, {FC} from 'react'
 
 import styles from "./Message.module.css"
+import {MessageDataType} from "./HW1";
 
-import {MessageDataType} from "../../p1-main/m1-ui/u1-app/App";
 
 export const Message: FC<MessageDataType> = (props) => {
     return (
