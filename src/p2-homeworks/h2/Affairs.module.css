@@ -7,8 +7,8 @@
 }
 
 .hm2 {
-    width: 40%;
-    background-color: lightgoldenrodyellow;
+    width: 20%;
+    background-color: lightblue;
 }
 .name {
     width: 50%;
@@ -17,5 +17,16 @@
 }
 .prior {
     width: 100%;
+    font-size: 15px;
+    font-weight: bold;
     color: #a093c1;
+}
+.low {
+    color: green;
+}
+.middle {
+    color: greenyellow;
+}
+.high {
+    color: red;
 }
