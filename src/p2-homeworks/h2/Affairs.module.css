@@ -7,8 +7,7 @@
 }
 
 .hm2 {
-    width: 20%;
-    background-color: lightblue;
+    width: 15%;
 }
 .name {
     width: 50%;
@@ -22,11 +21,19 @@
     color: #a093c1;
 }
 .low {
-    color: green;
+    color: darkgreen;
 }
 .middle {
-    color: greenyellow;
+    color: darkorange;
 }
 .high {
     color: red;
+}
+.button {
+    background-color: darkgreen;
+    color: #ebfaea;
+}
+.active {
+    background-color: lightgreen;
+    color: black;
 }

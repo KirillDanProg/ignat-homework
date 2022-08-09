@@ -1,11 +1,13 @@
 import React, {Dispatch, SetStateAction} from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
+import styles from "./Affairs.module.css"
 
 type AffairsPropsType = { // need to fix any
     data: AffairType[]
     setFilter: Dispatch<SetStateAction<FilterType>>
     deleteAffairCallback: (_id: number) => void
+    filterVal: FilterType
 }
 
 function Affairs(props: AffairsPropsType) {
@@ -21,15 +23,19 @@ function Affairs(props: AffairsPropsType) {
        return () => props.setFilter(val)
     }
 
+    const setClassName = (filterVal: FilterType) => {
+     return `${styles.button} ${filterVal === props.filterVal ? styles.active : ""}`
+    }
+
     return (
         <div>
 
             {mappedAffairs}
 
-            <button onClick={setFilter("all")}>All</button>
-            <button onClick={setFilter("high")}>High</button>
-            <button onClick={setFilter("middle")}>Middle</button>
-            <button onClick={setFilter("low")}>Low</button>
+            <button className={setClassName("all")} onClick={setFilter("all")}>All</button>
+            <button className={setClassName("high")} onClick={setFilter("high")}>High</button>
+            <button className={setClassName("middle")} onClick={setFilter("middle")}>Middle</button>
+            <button className={setClassName("low")} onClick={setFilter("low")}>Low</button>
         </div>
     )
 }
