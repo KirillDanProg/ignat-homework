@@ -43,6 +43,7 @@ function HW2() {
     const [affairs, setAffairs] = useState<Array<AffairType>>(defaultAffairs) // need to fix any
     const [filter, setFilter] = useState<FilterType>('all')
     const filteredAffairs = filterAffairs(affairs, filter)
+
     const deleteAffairCallback = (_id: number) => {
         setAffairs(deleteAffair(affairs, _id))
     } // need to fix any
@@ -56,6 +57,7 @@ function HW2() {
                 data={filteredAffairs}
                 setFilter={setFilter}
                 deleteAffairCallback={deleteAffairCallback}
+                filterVal={filter}
             />
 
             <hr/>
