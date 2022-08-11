@@ -1,39 +1,74 @@
+.wrapper {
+    padding: 10px;
+}
+
 .box {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 5px;
-    padding: 15px 5px 0;
+    padding: 15px 5px 0 10px;
 }
 
 .hm2 {
-    width: 15%;
+    width: 19%;
 }
+
 .name {
     width: 50%;
+    font-weight: bold;
     font-size: 20px;
-
+    color:#7900ff;
 }
+
 .prior {
     width: 100%;
     font-size: 15px;
-    font-weight: bold;
     color: #a093c1;
+}
+.delete {
+    border: none;
+    background-color:#ff4d72 ;
+    border-radius: 5px;
+    color: #ebfaea;
+}
+.delete:hover{
+    transition: 0.3s;
+    border: none;
+    background-color: #ff0a00;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px #ff4d72, 0 0 4px #ff4d72 ;
 }
 .low {
     color: darkgreen;
 }
+
 .middle {
     color: darkorange;
 }
+
 .high {
     color: red;
 }
+
 .button {
-    background-color: darkgreen;
-    color: #ebfaea;
+    margin: 2px;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff63b7;
+    color: white;
 }
 .active {
-    background-color: lightgreen;
-    color: black;
+    background-color: #96ff6d;
+    color:rgba(86,86,86,1)
+}
+.button:hover {
+    transition: 0.2s;
+    background-color: #ff2ba0;
+}
+
+.button.active:hover {
+    background-color: #33ff00;
 }

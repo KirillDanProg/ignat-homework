@@ -1,10 +1,48 @@
-.someClass {
 
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    padding: 15px;
 }
+
 
 .error {
     border: 1px solid red;
 }
+
 .errorMessage {
+    width: 100%;
+    margin-left: 5px;
     color: red;
+}
+
+.usersTotal {
+    font-size: 25px;
+    font-weight: bold;
+    color:  #ff5f80;
+}
+.button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #964bff;
+    color: #ebfaea;
+}
+.button:hover {
+    background-color:#d715ff;
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+.button:active {
+    background-color:#5148ff;
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+.input {
+    display: inline-block;
+    height:20px;
+    border: 2px solid #6008ff;
+    border-radius: 5px;
 }
