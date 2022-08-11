@@ -8,20 +8,23 @@ type GreetingPropsType = {
     addUser: () => void // need to fix any
     error: string // need to fix any
     totalUsers: number // need to fix any
+    focus: boolean
 }
 
 // презентационная компонента (для верстальщика)
 const Greeting: React.FC<GreetingPropsType> = (
-    {name, setNameCallback, addUser, error, totalUsers} // деструктуризация пропсов
+    {name, setNameCallback, addUser, error, totalUsers, focus} // деструктуризация пропсов
 ) => {
+
+
     const inputClass = name ? "" : s.error // need to fix with (?:)
 
     return (
-        <div>
-            <input value={name} onChange={setNameCallback} className={inputClass}/>
-            <button onClick={addUser}>add</button>
-            <span>{totalUsers}</span>
-            <div className={s.errorMessage}>{error ? error : ""}</div>
+        <div className={s.box}>
+            <input value={name} onChange={setNameCallback} className={`${s.input} ${focus ? inputClass : ""}`}/>
+            <button className={s.button} onClick={addUser}>add</button>
+            <span className={s.usersTotal}>{totalUsers}</span>
+            <div className={s.errorMessage}>{error && error}</div>
         </div>
     )
 }
