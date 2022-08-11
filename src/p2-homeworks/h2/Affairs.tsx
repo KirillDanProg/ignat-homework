@@ -28,7 +28,7 @@ function Affairs(props: AffairsPropsType) {
     }
 
     return (
-        <div>
+        <div className={styles.wrapper}>
 
             {mappedAffairs}
 
