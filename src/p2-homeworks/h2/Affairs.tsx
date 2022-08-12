@@ -2,6 +2,7 @@ import React, {Dispatch, SetStateAction} from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
 import styles from "./Affairs.module.css"
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 type AffairsPropsType = { // need to fix any
     data: AffairType[]
@@ -20,11 +21,11 @@ function Affairs(props: AffairsPropsType) {
     ))
 
     const setFilter = (val: FilterType) => {
-       return () => props.setFilter(val)
+        return () => props.setFilter(val)
     }
 
     const setClassName = (filterVal: FilterType) => {
-     return `${styles.button} ${filterVal === props.filterVal ? styles.active : ""}`
+        return `${styles.button} ${filterVal === props.filterVal ? styles.active : ""}`
     }
 
     return (
@@ -32,10 +33,14 @@ function Affairs(props: AffairsPropsType) {
 
             {mappedAffairs}
 
-            <button className={setClassName("all")} onClick={setFilter("all")}>All</button>
-            <button className={setClassName("high")} onClick={setFilter("high")}>High</button>
-            <button className={setClassName("middle")} onClick={setFilter("middle")}>Middle</button>
-            <button className={setClassName("low")} onClick={setFilter("low")}>Low</button>
+            <SuperButton onClick={setFilter("all")}
+                         className={setClassName("all")}>All</SuperButton>
+            <SuperButton onClick={setFilter("high")}
+                         className={setClassName("high")}>High</SuperButton>
+            <SuperButton onClick={setFilter("middle")}
+                         className={setClassName("middle")}>Middle</SuperButton>
+            <SuperButton onClick={setFilter("low")}
+                         className={setClassName("low")}>Low</SuperButton>
         </div>
     )
 }
