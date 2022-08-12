@@ -17,7 +17,7 @@ function Affair(props: AffairPropsType) {
     return (
         <div className={styles.box}>
             <div className={styles.name}>{props.affair.name}</div>
-            <SuperButton onClick={deleteCallback}
+            <SuperButton red onClick={deleteCallback}
                          className={styles.delete}>delete</SuperButton>
             <div className={`${styles.prior}  ${props.affair.priority === "low" ? styles.low :
                 props.affair.priority === "middle" ? styles.middle :

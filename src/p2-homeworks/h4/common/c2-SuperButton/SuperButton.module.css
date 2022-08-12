@@ -1,7 +1,32 @@
 .default {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #964bff;
+    color: #ebfaea;
+}
 
+.default:hover {
+    background-color: #d715ff;
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+.default:active {
+    background-color: #5148ff;
+    transform: scale(1.05);
+    transition: 0.4s;
 }
 
 .red {
-    background: red;
+    margin: 2px;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff63b7;
+    color: white;
+}
+.red:hover {
+    transition: 0.2s;
+    background-color: #ff2ba0;
 }
