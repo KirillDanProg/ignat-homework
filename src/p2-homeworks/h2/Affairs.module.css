@@ -18,28 +18,31 @@
     width: 50%;
     font-weight: bold;
     font-size: 20px;
-    color:#7900ff;
+    color: #7900ff;
 }
 
 .prior {
     width: 100%;
-    font-size: 15px;
+    font-size: 18px;
     color: #a093c1;
 }
+
 .delete {
     border: none;
-    background-color:#ff4d72 ;
+    background-color: #ff4d72;
     border-radius: 5px;
     color: #ebfaea;
 }
-.delete:hover{
+
+.delete:hover {
     transition: 0.3s;
     border: none;
     background-color: #ff0a00;
     border-radius: 5px;
     color: white;
-    box-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px #ff4d72, 0 0 4px #ff4d72 ;
+    box-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px #ff4d72, 0 0 4px #ff4d72;
 }
+
 .low {
     color: darkgreen;
 }
@@ -60,15 +63,10 @@
     background-color: #ff63b7;
     color: white;
 }
+
 .active {
+    transition: 0.4s;
     background-color: #96ff6d;
-    color:rgba(86,86,86,1)
-}
-.button:hover {
-    transition: 0.2s;
-    background-color: #ff2ba0;
+    color: rgba(94, 0, 188, 0.98)
 }
 
-.button.active:hover {
-    background-color: #33ff00;
-}
