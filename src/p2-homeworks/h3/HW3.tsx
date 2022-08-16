@@ -20,14 +20,11 @@ function HW3() {
 
     return (
         <div>
-            <hr/>
-            
             <div className={styles.title}>homeworks 3</div>
 
             {/*should work (должно работать)*/}
             <GreetingContainer users={users} addUserCallback={addUserCallback}/>
 
-            <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeGreeting/>*/}
             <hr/>

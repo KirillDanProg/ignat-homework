@@ -50,7 +50,6 @@ function HW2() {
     } // need to fix any
     return (
         <div className={styles.hm2}>
-            <hr/>
            <div className={mainStyles.title}>homeworks 2</div>
 
             {/*should work (должно работать)*/}
@@ -61,7 +60,6 @@ function HW2() {
                 filterVal={filter}
             />
 
-            <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeAffairs/>*/}
             <hr/>
