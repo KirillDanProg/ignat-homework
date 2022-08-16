@@ -1,5 +1,6 @@
 import React from 'react'
 import Message from "./Message";
+import styles from "../../p1-main/m1-ui/u1-app/App.module.css"
 
 export type MessageDataType = {
     avatar: string
@@ -17,9 +18,9 @@ const messageData = {
 function HW1() {
 
     return (
-        <div>
+        <div >
             <hr/>
-            homeworks 1
+           <div className={styles.title}>homeworks 1</div>
             {/*should work (должно работать)*/}
 
             <Message

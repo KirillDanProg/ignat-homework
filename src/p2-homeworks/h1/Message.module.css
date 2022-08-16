@@ -1,13 +1,11 @@
-:root {
-    --bgc: green;
-}
+
 .message {
     position: relative;
     display: flex;
     gap: 15px;
     padding: 25px;
-    background-color: var(--bgc);
 }
+
 .messageContent {
     display: grid;
     grid-template-areas:
@@ -18,47 +16,52 @@
     max-width: 200px;
     padding: 16px;
     border-radius: 10px 10px 10px 0;
-    background-color: #022200;
+    background-color: rgba(255, 144, 177, 0.3);
 }
+
 .messageContent::after {
     content: "";
     position: absolute;
     bottom: 0;
-    left: -15px;
+    left: -20px;
     width: 20px;
     height: 20px;
     opacity: 1;
-    background-color: #022200;
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 20px, rgba(255, 144, 177, 0.3) 0);
     z-index: 0;
 }
-.messageContent::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -30px;
-    width: 30px;
-    height: 30px;
-    background-color: var(--bgc);
-    border-bottom-right-radius: 50%;
-    z-index: 1;
-}
+
+/*.messageContent::before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: -30px;*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    background-color: var(--bgc);*/
+/*    border-bottom-right-radius: 50%;*/
+/*    z-index: 1;*/
+/*}*/
 .name {
     grid-area: name;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #a093c1;
+    color: #8f20ff;
 }
+
 .time {
     grid-area: time;
     margin: auto -8px -8px auto;
     text-align: right;
-    color: white;
+    color: black;
     opacity: 0.3;
 }
+
 .messageText {
     grid-area: text;
-    color: #ebfaea;
+    color: #8f20ff;
 }
+
 .avatar {
     z-index: 3;
     position: relative;

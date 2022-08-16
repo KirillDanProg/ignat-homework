@@ -9,6 +9,7 @@ export const Message: FC<MessageDataType> = (props) => {
         <>
             <div className={styles.message}>
                 <img className={styles.avatar} src={props.avatar} alt={"avatar"}/>
+                <div className={styles.tail}></div>
                 <div className={styles.messageContent}>
                     <div className={styles.name}>{props.name}</div>
                     <div className={styles.messageText}>{props.message}</div>

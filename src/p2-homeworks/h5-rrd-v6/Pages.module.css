@@ -1,0 +1,36 @@
+.linksContainer {
+    transition: 1s;
+    transform: translateX(-26%);
+}
+
+.shown {
+    transition: 1s;
+    transform: translateX(0);
+}
+
+.linkItem {
+    padding: 5px 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(255,109,154,0.98);
+}
+.linkItem:hover  {
+    display: inline-block;
+    transform: scale(1.05);
+    text-decoration: underline;
+    transition: 0.4s;
+    color: rgba(255,38,149,0.98);
+}
+
+.btnMenu {
+    margin-left: 10px;
+    padding: 5px 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(37,255,226,0.98);
+    color: rgba(255,38,149,0.98);
+    border-radius: 10px;
+    border: 3px solid rgba(255,94,158,0.98);
+    cursor: pointer;
+}
