@@ -1,14 +1,21 @@
 import React from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import {useDispatch, useSelector} from "react-redux";
+import {canUseDOM} from "react-redux/es/utils/useIsomorphicLayoutEffect";
+import {setLoadingAC} from "../../store/mainReducer";
+import {RootType} from "../../store/store";
 
 function HW10() {
-    // useSelector, useDispatch
-    const loading = false
+
+    const loading = useSelector<RootType, boolean>(state => state.main.isLoading)
+    const dispatch = useDispatch()
 
     const setLoading = () => {
-        // dispatch
-        // setTimeout
-        console.log('loading...')
+        dispatch(setLoadingAC())
+
+        setTimeout(() => {
+            dispatch(setLoadingAC())
+        }, 1000)
     };
 
     return (
